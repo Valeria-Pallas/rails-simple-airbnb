@@ -1,0 +1,47 @@
+.card-product {
+  overflow: hidden;
+  height: 120px;
+  background: white;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  display: flex;
+  align-items: center;
+}
+
+.card-product img {
+  height: 100%;
+  width: 120px;
+  object-fit: cover;
+}
+
+.card-product h2 {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.card-product p {
+  font-size: 12px;
+  line-height: 1.4;
+  opacity: .7;
+  margin-bottom: 0;
+  margin-top: 8px;
+}
+
+.card-product .card-product-infos {
+  padding: 16px;
+}
+/* styles/flats.scss */
+
+.card-body {
+  display: flex; /* Aplica display flex a los elementos dentro de .card-body */
+  flex-direction: row;
+  flex-wrap: wrap; /* Permite que los elementos se envuelvan a la siguiente fila si no caben en el ancho del contenedor */
+  /* Ajusta otras propiedades de flexbox según sea necesario */
+}
+
+.list-group-item {
+  display: flex; /* Aplica display flex a los elementos dentro de .card-body */
+  flex-direction: row;
+  flex: 0 0 calc(33.333% - 10px); /* Divide el espacio disponible en 3 columnas con un pequeño espacio entre ellas */
+  margin: 5px; /* Agrega un pequeño margen entre los elementos */
+}

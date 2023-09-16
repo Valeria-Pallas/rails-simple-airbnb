@@ -1,0 +1,22 @@
+<h1>Lista de Apartamentos Disponibles</h1>
+
+
+<div class="card" style="width: 18rem;">
+  <img src="..." class="card-img-top" alt="...">
+    <ul class="list-group">
+      <% @flats.each do |flat| %>
+        <li class="list-group-item">
+          <div class="row">
+            <div class="col-md-8">
+              <h5 class="card-title"><%= flat.name %></h5>
+              <p class="card-text"><%= flat.description %></p>
+              <p><strong>Precio por Noche:</strong> $<%= flat.price_per_night %></p>
+              <p><strong>Número de Huéspedes:</strong> <%= flat.number_of_guests %></p>
+              <p><strong>Dirección:</strong> <%= flat.address %></p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+            </div>
+        </li>
+      <% end %>
+    </ul>
+</div>

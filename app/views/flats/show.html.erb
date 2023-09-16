@@ -1,0 +1,17 @@
+<!-- app/views/flats/show.html.erb -->
+
+<h1>Detalles del Apartamento</h1>
+
+<h2><%= @flat.name %></h2>
+<p><%= @flat.description %></p>
+<p><strong>Precio por Noche:</strong> $<%= @flat.price_per_night %></p>
+<p><strong>Número de Huéspedes:</strong> <%= @flat.number_of_guests %></p>
+<p><strong>Dirección:</strong> <%= @flat.address %></p>
+
+<%= link_to 'Editar', edit_flat_path(@flat) %> |
+<%= link_to 'Eliminar', @flat, method: :delete, data: { confirm: '¿Estás seguro de eliminar este apartamento?' } %> |
+<%= link_to 'Volver a la lista', flats_path %>
+<!-- app/views/flats/show.html.erb -->
+
+<%= link_to 'Eliminar', @flat, method: :delete, data: { confirm: '¿Estás seguro de eliminar este apartamento?' } %> |
+<%= link_to 'Volver a la lista', flats_path %>
